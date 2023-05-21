@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url(living-room-with-yellow-armchair-empty-dark-blue-wall-background-3d-rendering_41470-3901.avif);
+   
+    background-size: cover;
+    background-position: center;
+}
+.navbar {
+    width:85%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 0;
+}
+.logo{
+    
+    cursor:pointer;
+    color: #fff;
+    list-style: none;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #050404;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: 0.5s;
+}
+
+.navbar a:hover::after,
+.navbar .active::after {
+    width: 100%;
+}
+.content{
+    width:100%;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color:#ffff;
+
+}
+.content h1{
+    font-size: 30px;
+    margin-top: 80px;
+
+}
+.content p{
+    margin :20px auto;
+    font-weight: 100;
+    line-height: 25px;
+
+}
+.btn{
+    width:200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border:2px solid  #009688;
+    background: transparent;
+    color: #fff;
+    position: relative;
+   
+}
+span{
+    background: #009688;
+    height: 100%;
+    width: 100%;
+    border-radius:25px ;
+    position: relative;
+    left:0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+.btn:hover {
+
+    background: #009688;
+     animation-name: example;
+    animation-duration: 4s;
+
+}
+.btn:hover {
+    border:none;
+   } 
+@keyframes example {
+    from {background-color: #009688;}
+    to {background-color: #3be8d6;}
