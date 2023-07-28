@@ -5,8 +5,8 @@
 }
 .banner{
     width: 100%;
-    height: 100vh;
-    background-image: url(living-room-with-yellow-armchair-empty-dark-blue-wall-background-3d-rendering_41470-3901.avif);
+    height: 90vh;
+    background-image: url(./img/photo2.jpg);
    
     background-size: cover;
     background-position: center;
@@ -53,6 +53,7 @@
 .navbar .active::after {
     width: 100%;
 }
+
 .content{
     width:100%;
     position: absolute;
@@ -75,24 +76,28 @@
 }
 
 .btn{
-    display: flex;text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    
 }
 .button {
-    border: 2px solid black;
+    border: 2px solid rgb(80, 77, 77);
     text-align: center;
     border-radius: 25px;
     width: 150px;
     padding:5px ;
     height: 30px;
     display: block;
-    margin:  10px;
+    margin-right:  10px;
     position: relative;
     background: linear-gradient(to right, black 50%, white 50%);
     background-size: 200% 100%;
     background-position: right bottom;
     transition: all .5s ease-out;
    
-    left: 30%;
+    
   }
   
   .button:hover {
@@ -112,37 +117,55 @@
   .text:hover {
     color: white;  
   }
-  .footcontainer{
-    position: fixed;
-   left: 7%;
-   bottom: 0;
-    width: 100%;
+
+/* footer find holiday */
+  .content .footercontainer{
+      position: relative;    
+      padding-top: 50px;
+      height: 80px;
+      width: 80%;
+      display: flex;
+      color: white;
+      margin: auto;
+      justify-content: space-evenly;
+      align-items: center;
+  }
+  .fnav1{
+
     display: flex;
-   color: white;
+  }
+  .content .fcontainer{
+    display: flex;
+    justify-content: center;
+    width: 50%;
   }
   .footer{
-    margin-right: 20px;
+    margin-right: 50px;
   }
   
   .foot{
-   display: flex;
-   align-items: center;
-  
+   display: flex; 
  
   }
   .click{
     padding: 8px;
-    margin: 10px;
+    margin-left: 15px;
+  }
+  .footWhen{
+    margin-left:15px;
+  }
+  .footWhere{
+    margin-left:15px;
   }
   .bton{
     border: 2px solid black;
     text-align: center;
     border-radius: 15px;
     width: 100px;
-    padding:2px ;
+    padding: 1px;
     height: 30px;
     display: block;
-    margin:  10px;
+    margin-left:  50px;
     position: relative;
     background: linear-gradient(to right, black 50%, white 50%);
     background-size: 200% 100%;
@@ -152,4 +175,294 @@
   .bton:hover {
     background-position: left bottom;
     
+  }
+
+  /* offer */
+  .offermain{
+    text-align: center;
+  } 
+
+  .box{
+    display: flex;
+  }
+ .offerbox{
+  width: 100%;
+  padding-top: 100px;
+  padding-left: 30px;
+ 
+ }
+ .offerbox:hover{
+  background-color: #050404;
+  color: #fff;
+
+ }
+ .offerbox h2{
+  padding-top: 30px;
+}
+.offerbox h3{
+  padding-top: 5px;
+}
+ .pofferbox{
+  text-align: justify;
+  padding-bottom: 10px;
+ 
+ }
+ .offerbox .bton{
+  padding: 5px;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+
+ }
+ .offercontainer{
+  padding-top:30px ;
+ }
+ .offerphoto img{
+  border-radius:10px;
+ }
+ /* popular */
+  .popular .card{
+  border: 1px solid;
+  width: 500px;
+  height: 440px;
+ }
+ .popular .card-body img{
+width: 450px;
+height:300px;
+padding: 15px 10px 10px 15px;
+border-radius: 50%;
+ }
+ .popular .psite {
+  padding: 5px;
+  text-align: center;
+ }
+ .popular .card:hover{
+  background-color: #050404;
+  color: #fff;
+ }
+ .site{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1px;
+  padding-top: 30px;
+ }
+ .pmain{
+  border-bottom: 1px solid black;
+  padding-bottom: 30px;
+  text-align: center;
+  padding-top: 30px;
+ }
+ /* contant */
+ .contact {
+  max-width: 968px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.contact h2 {
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  /* border-bottom: 1px solid var(--main-color); */
+  margin-bottom: 10px;
+}
+
+.contact form {
+  background-color: rgb(252, 252, 252);
+  padding: 10px;
+  border-radius: 0.5rem ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+.contact form .email {
+  border: none;
+  outline: none;
+  width: 200px;
+  background-color: white;
+}
+
+.contact .btn {
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  background-color: #fff;
+
+}
+.contact .btn:hover{
+  background-position: left bottom;
+}
+.phone{
+  border: none;
+  outline: none;
+  width: 200px;
+  background-color: white;
+}
+ .contact .fmessage{
+  margin-top: 30px;
+}
+
+/* footer */
+.ender {
+  max-width: 968px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.social {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.social .bx {
+  background-color:rgb(0, 0, 0);
+  padding: 2px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  border: 4px solid rgba(2, 2, 2, 0.4);
+  color: rgb(229, 201, 201);
+  transition: 0.5s;
+}
+
+.social .bx:hover {
+  filter: brightness(1.4);
+}
+
+.ender .logo{
+  color: #050404;
+}
+@media (max-width: 1380px) {
+  .offerphoto img{
+    width: 600px;
+  }
+  .offerbox{
+    padding: 10px 15px;
+  }
+  .pofferbox h2{
+    padding-top: 5px;
+  }
+}
+@media (max-width: 820px) {
+  .offerphoto img{
+    width: 400px;
+  }
+  .offerbox h2{
+    padding-top: 0;
+  }
+  .pofferbox{
+   font-size: 12px;
+  }
+  .pofferbox h2{
+    padding-top: 0;
+  }
+  .offerbox .bton{
+    padding: 0;
+  }
+  
+}
+@media (max-width: 390px) {
+  .offerphoto img{
+    width: 200px;
+  }
+  .offerbox h2{
+    padding-top: 0;
+  }
+  .pofferbox{
+   font-size: 12px;
+  }
+  .pofferbox h2{
+    padding-top: 0;
+  }
+  .offerbox .bton{
+    padding: 0;
+  }
+  .offercontainer .offerphoto{
+    width: 100%;
+  }
+  .offer-box{
+    display: block;
+    text-align: center;
+  }
+  .site .card-body img{
+    display: block;
+    width: 100%;
+  }
+  .psite{
+    display: block;
+    width:100%;
+  }
+}
+
+  
+ 
+
+@media (max-width: 1080px) {
+  .logo {
+      padding: 0;
+      margin: auto 0;
+  }
+
+  .content{
+    max-width: auto 0;
+    text-align: center;
+  }}
+  @media (max-width: 956px) {
+   .banner{
+       width: 100%;
+    }
+}
+@media (max-width: 700px) {
+  .banner{
+    width: 100%;
+ }
+  .menu {
+      display: none;
+  }
+ .content .footercontainer{
+  display: none;
+ }
+}
+
+@media (max-width: 520px) {
+  .banner{
+    width: 100%;
+ }
+
+}
+@media (max-width: 390px) {
+  .banner{
+    width: 100%;
+ }
+
+}
+
+
+
+
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 16px rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
+  /* Offer */
+  .offermain{
+    border-bottom: 1px solid #050404;
+    padding: 30px;
   }
